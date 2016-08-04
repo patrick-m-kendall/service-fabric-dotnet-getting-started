@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chatter</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/main.css"/>
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/main.min.css" asp-append-version="true"/>
+    </environment>
+</head>
+<body>
+<header>
+    <div class="wrapper header-content">
+        <h2 class="azure-heading">Azure Service Fabric</h2>
+        <h1 class="chatter-heading">Chatter</h1>
+        <a class="button whatsnew" href="http://aka.ms/servicefabric" target="_blank">See what's new in Service Fabric</a>
+
+    </div>
+</header>
+<section id="main" class="wrapper">
+    @RenderBody()
+</section>
+<footer>
+    <div id="form" class="wrapper">
+        <label>Name:</label><input id="inputName"/>
+        <label>Message:</label><input id="inputMessage"/>
+        <a class="button" href="javascript:void(0);" id="sendButton">Send</a>
+        <a class="button" href="javascript:void(0);" id="deleteButton">Clear Messages</a>
+    </div>
+</footer>
+
+<environment names="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/main.js"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/main.min.js"></script>
+</environment>
+</body>
+</html>

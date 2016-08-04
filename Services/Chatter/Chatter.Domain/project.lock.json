@@ -1,0 +1,108 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "Microsoft.ServiceFabric/5.1.163": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "resource": {
+          "lib/net45/en-us/Microsoft.ServiceFabric.Internal.Strings.resources.dll": {
+            "locale": "en-us"
+          }
+        }
+      },
+      "Microsoft.ServiceFabric.Data/2.1.163": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[5.1.163]"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Data.Interfaces.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Data.Interfaces.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services/2.1.163": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[5.1.163]",
+          "Microsoft.ServiceFabric.Data": "[2.1.163]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {},
+          "lib/net45/ServiceFabricServiceModel.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {},
+          "lib/net45/ServiceFabricServiceModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.ServiceFabric/5.1.163": {
+      "sha512": "0jhyH8YIAkrHX/o7F+sDXsC+vUQEQFLAGKwhviHqngPZYGKXS2bxNNfZ4hdRQHfg4PYybfVYIyDEpvvx0Wob0Q==",
+      "type": "package",
+      "path": "Microsoft.ServiceFabric/5.1.163",
+      "files": [
+        "Microsoft.ServiceFabric.5.1.163.nupkg.sha512",
+        "Microsoft.ServiceFabric.nuspec",
+        "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll",
+        "lib/net45/Microsoft.ServiceFabric.Internal.dll",
+        "lib/net45/System.Fabric.dll",
+        "lib/net45/System.Fabric.xml",
+        "lib/net45/en-us/Microsoft.ServiceFabric.Internal.Strings.resources.dll"
+      ]
+    },
+    "Microsoft.ServiceFabric.Data/2.1.163": {
+      "sha512": "sBw4BYqBWecggr+J3UsNxui5RLVxQNci+UUifqyHjfMQ2kOgaCx43UzeMuaRh/kRgep2SvBEqGuPUUv+rMXKLQ==",
+      "type": "package",
+      "path": "Microsoft.ServiceFabric.Data/2.1.163",
+      "files": [
+        "Microsoft.ServiceFabric.Data.2.1.163.nupkg.sha512",
+        "Microsoft.ServiceFabric.Data.nuspec",
+        "lib/net45/Microsoft.ServiceFabric.Data.Interfaces.dll",
+        "lib/net45/Microsoft.ServiceFabric.Data.Interfaces.xml",
+        "lib/net45/Microsoft.ServiceFabric.Data.dll",
+        "lib/net45/Microsoft.ServiceFabric.Data.xml"
+      ]
+    },
+    "Microsoft.ServiceFabric.Services/2.1.163": {
+      "sha512": "kujaWU3j7uT9VdfQb+PcOV0OpLO0W/xd+3zas4SlD0iyAycgiZ7LKGs9+Zc8yWr0uOZzMiAiFzm+41LF3PQy/A==",
+      "type": "package",
+      "path": "Microsoft.ServiceFabric.Services/2.1.163",
+      "files": [
+        "Microsoft.ServiceFabric.Services.2.1.163.nupkg.sha512",
+        "Microsoft.ServiceFabric.Services.nuspec",
+        "lib/net45/Microsoft.ServiceFabric.Services.dll",
+        "lib/net45/Microsoft.ServiceFabric.Services.xml",
+        "lib/net45/ServiceFabricServiceModel.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.ServiceFabric >= 5.1.163",
+      "Microsoft.ServiceFabric.Services >= 2.1.163"
+    ],
+    ".NETFramework,Version=v4.5.2": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -17,3 +17,4 @@ _ReSharper.*
 nuget.exe
 .settings
 *.sln.ide
+/Services/Chatter/Chatter.Web/wwwroot/lib/jquery

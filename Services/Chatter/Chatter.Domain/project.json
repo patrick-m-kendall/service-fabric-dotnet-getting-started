@@ -1,0 +1,18 @@
+﻿{
+    "version": "1.0.0-*",
+    "buildOptions": {
+        "platform": "x64"
+    },
+
+    "dependencies": {
+        "Microsoft.ServiceFabric": "5.1.163",
+        "Microsoft.ServiceFabric.Services": "2.1.163"
+    },
+
+    "frameworks": {
+        "net452": {
+            "dependencies": {
+            }
+        }
+    }
+}

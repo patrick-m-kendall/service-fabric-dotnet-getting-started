@@ -1,0 +1,22 @@
+﻿{
+    "version": "1.0.0-*",
+    "buildOptions": {
+        "platform": "x64",
+        "emitEntryPoint": true,
+        "preserveCompilationContext": true
+    },
+
+    "dependencies": {
+        "Chatter.Domain": "1.0.0-*",
+        "Microsoft.ServiceFabric": "5.1.163",
+        "Microsoft.ServiceFabric.Data": "2.1.163",
+        "Microsoft.ServiceFabric.Services": "2.1.163"
+    },
+
+    "frameworks": {
+        "net452": {
+            "dependencies": {
+            }
+        }
+    }
+}
